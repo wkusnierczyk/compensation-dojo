@@ -20,7 +20,7 @@ Check out [Compensation Dojo here](https://chatgpt.com/g/g-697a084b55b8819188f30
 - [Purpose](#purpose)
 - [Core assumptions](#core-assumptions)
 - [Session flow overview](#session-flow-overview)
-- [Phase 1: setup](#phase-1-setup)
+- [**Phase 1: Setup**](#phase-1-setup)
   - [Role selection](#role-selection)
   - [Learning goals](#learning-goals)
   - [Opponent style](#opponent-style)
@@ -32,13 +32,14 @@ Check out [Compensation Dojo here](https://chatgpt.com/g/g-697a084b55b8819188f30
   - [Time boundary](#time-boundary)
   - [Negotiation context](#negotiation-context)
   - [Coaching](#coaching)
-- [Phase 2: negotiation](#phase-2-negotiation)
+- [**Phase 2: Negotiation**](#phase-2-negotiation)
   - [Timed negotiation flow](#timed-negotiation-flow)
   - [Termination](#termination)
-- [Phase 3: Post-negotiation update](#phase-3-post-negotiation-update)
+- [**Phase 3: Post-negotiation update**](#phase-3-post-negotiation-update)
   - [Outcome summary](#outcome-summary)
   - [Expectation reveal](#expectation-reveal)
   - [Skill evaluation and actionable feedback](#skill-evaluation-and-actionable-feedback)
+- [Refeernce](#refeernce)
 - [License and About](#license-and-about)
 
 ## Purpose
@@ -231,6 +232,10 @@ Compensation Dojo will provide:
 
 Compensation Dojo will not provide any generic or motivational filler.
 That's not the purpose.
+
+## Refeernce
+
+* [The ultimate guide to negotiating your comp](https://www.lennysnewsletter.com/p/the-ultimate-guide-to-negotiating) by Jacob Warwick.
 
 ## License and About
 
