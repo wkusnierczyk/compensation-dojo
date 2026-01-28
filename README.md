@@ -1,155 +1,246 @@
 # Compensation Dojo
 
-Compensation Dojo is a realistic compensation negotiation simulator, backed by an LLM model (ChatGPT).
+<table>
+  <tr>
+    <td>
+      <img src="graphics/compensation-dojo.png" alt="Compensation Dojo logo" width="200" />
+    </td>
+    <td>
+        <strong>Compensation Dojo</strong><br/> 
+        A realistic compensation negotiation simulator, backed by an LLM model (ChatGPT).</td>
+  </tr>
+</table>
 
-**Version:** 0.1.0
-
----
-
-## 1. Purpose & Positioning
-
-Compensation Dojo is a focused negotiation training simulator designed to help users practice realistic compensation negotiations under pressure.
-
-Its goals are to:
-- Build real negotiation skill through in-character practice
-- Simulate time pressure, resistance, and ambiguity
-- Deliver candid, actionable feedback after negotiations conclude
-
-Compensation Dojo is not a coaching chatbot during negotiations, nor a general career advice assistant.
-
-Failure is expected and treated as a valuable learning outcome.
+Check out [Compensation Dojo here](https://chatgpt.com/g/g-697a084b55b8819188f30d7dc809e362-compensation-dojo).
 
 ---
 
-## 2. Core Assumptions
+## Table of contents
 
-- Negotiation skill is learned through experience, not tips
-- Real negotiations are time-bounded and imperfect
-- Strict realism produces better learning outcomes
-- Feedback is most effective after the interaction ends
+- [Purpose](#purpose)
+- [Core assumptions](#core-assumptions)
+- [Session flow overview](#session-flow-overview)
+- [Phase 1: setup](#phase-1-setup)
+  - [Role selection](#role-selection)
+  - [Learning goals](#learning-goals)
+  - [Opponent style](#opponent-style)
+    - [The competitive (win-lose) approach](#the-competitive-win-lose-approach)
+    - [Collaborative (win-win) approach](#collaborative-win-win-approach)
+    - [Compromising (split the difference) approach](#compromising-split-the-difference-approach)
+    - [Accommodating (lose-win) approach](#accommodating-lose-win-approach)
+    - [Avoiding (lose-lose) approach](#avoiding-lose-lose-approach)
+  - [Time boundary](#time-boundary)
+  - [Negotiation context](#negotiation-context)
+  - [Coaching](#coaching)
+- [Phase 2: negotiation](#phase-2-negotiation)
+  - [Timed negotiation flow](#timed-negotiation-flow)
+  - [Termination](#termination)
+- [Phase 3: Post-negotiation update](#phase-3-post-negotiation-update)
+  - [Outcome summary](#outcome-summary)
+  - [Expectation reveal](#expectation-reveal)
+  - [Skill evaluation and actionable feedback](#skill-evaluation-and-actionable-feedback)
+- [License and About](#license-and-about)
 
-Users are expected to stay in role and accept professional resistance.
+## Purpose
+
+Compensation Dojo is a focused negotiation training simulator designed to help hiring managers and job candidates practice realistic compensation negotiations under pressure.
+
+The goals are to:
+
+- Build real negotiation skills through practical negotiation simulations.
+- Simulate time pressure, resistance, and ambiguity.
+- Deliver candid, actionable feedback after concluded negotiations.
+
+Negotiation failure is expected and treated as a **valuable learning outcome**.
+
+> **Note**  
+> Compensation Dojo is not a general career advice assistant.
+> Also, it will not actually sign with you the negotiated contract ;)
+
+## Core assumptions
+
+- **Negotiation skills** are learned through experience, not from textbooks.
+- **Real negotiations** are time-bounded and under-pressure conversations.
+- **Strict realism** produces better learning outcomes.
+- **Feedback** is most effective after the interaction ends, not during the negotiation.
+
+You are expected to **stay in role** and accept professional resistance.
+
+## Session flow overview
+
+Each Compensation Dojo session follows a fixed structure.
+
+- Setup phase (untimed)
+- Negotiation start; timer is aactivated.
+- Timed negotiation; **stay in your role** thoughtout this phase!
+- Negotiation end; timer is stopped.
+- Expectation reveal and assessment.
+- Summary and feedback.
 
 ---
 
-## 3. Session Flow Overview
+## Phase 1: Setup
 
-Each session follows a fixed structure:
+In this phase, you are **configuring** the negotiation session to your needs.
 
-1. Setup Phase (untimed)
-2. Negotiation Start (timer activated)
-3. Timed Negotiation (in-character only)
-4. Termination
-5. Expectation Reveal
-6. Closure & Feedback
+### Role selection
 
----
+You select your role in the negotiation.
 
-## 4. Setup Phase (Untimed)
+- The candidate, looking to maximize their prospective compensation.
+- The hiring manager, looking to land a contract within preset boundaries.
 
-### 4.1 Role Selection
-User selects:
-- Candidate
-- Hiring Manager
+### Learning goals
 
-### 4.2 Learning Goals
-Examples include:
-- Anchoring higher
-- Handling pushback
-- Closing under pressure
+You specify your learning goals.
 
-### 4.3 Opponent Style
-Examples:
-- Collaborative
-- Neutral
-- Skeptical
-- Hard-nosed
+- Anchoring higher compensation.
+- Handling pushback from the negotiation partner/adversary.
+- Closing a deal under pressure.
 
-### 4.4 Time Boundary
-A strict time limit is set and enforced.
+### Opponent style
 
-### 4.5 Negotiation Context
-Defined using real materials or a generated mock scenario:
-- Company
-- Role
-- Compensation structure
-- Constraints
+You specify the style/attitude of your **negotiation counterpart**.
 
-### 4.6 Explicit Warning
-Once negotiation starts, the system will no longer coach or explain.
+| Style         | Goal             | Focus             |
+| ------------- | ---------------- | ----------------- |
+| Competitive   | Win-Lose         | Outcome           |
+| Collaborative | Win-Win          | Problem Solving   |
+| Compromising  | Split Difference | Fairness          |
+| Accommodating | Lose-Win         | Relationship      |
+| Avoiding      | Lose-Lose        | Safety/status quo |
 
----
+#### The competitive (win-lose) approach
 
-## 5. Negotiation Start
+| **Aspect**              | **Description** |
+| ----------------------- | --------------- |
+| **Attitude**            | "I want to get the best deal for myself, regardless of the other party." This style is high in assertiveness and low in cooperativeness. |
+| **Key Characteristics** | - Uses hard-bargaining tactics (threats, ultimatums, strict deadlines).<br/>- Guards information closely and may use deception or misdirection.<br/>- Focuses purely on short-term gains rather than long-term relationships. |
+| **Best Used When**      | - You are in a one-off transaction (e.g., buying a car) and will never see the person again.<br/>- You need quick, decisive action or are in an emergency.<br/>- The other party is using competitive tactics against you. |
+| **Risk**                | Can destroy relationships and reputation; often leads to deadlock. |
 
-The system announces:
+#### Collaborative (win-win) approach
+
+| **Aspect**              | **Description** |
+| ----------------------- | --------------- |
+| **Attitude**            | "Let's find a solution that satisfies both our needs completely." This is high in both assertiveness and cooperativeness. |
+| **Key Characteristics** | - High transparency and information sharing.<br/>- Focuses on underlying interests (why they want something) rather than positions (what they say they want).<br/>- Invests significant time in brainstorming and problem-solving. |
+| **Best Used When**      | - The relationship is long-term and high-value (e.g., business partnerships, joint ventures).<br/>- The issues are complex and require creative solutions.<br/>- Buy-in from both sides is essential for execution. |
+| **Risk**                | Can be time-consuming; risky if the other party takes advantage of your openness. |
+
+#### Compromising (split the difference) approach
+
+| **Aspect**              | **Description** |
+| ----------------------- | --------------- |
+| **Attitude**            | "Let's meet halfway so we can move on." This style is moderate in both assertiveness and cooperativeness. |
+| **Key Characteristics** | - Focuses on fairness and expediency.<br/>- Quickly moves to bargaining and trading concessions.<br/>- Often relies on standard norms or market averages to settle disputes. |
+| **Best Used When**      | - Time is limited and a "perfect" solution isn't worth the effort.<br/>- Goals are mutually exclusive (e.g., there is only one specific item to claim).<br/>- Collaborative efforts have failed, and you need a temporary fix. |
+| **Risk**                | Often leaves value on the table; neither side is fully satisfied. |
+
+#### Accommodating (lose-win) approach
+
+| **Aspect**              | **Description** |
+| ----------------------- | --------------- |
+| **Attitude**            | "I will give you what you want to preserve our relationship." This is low in assertiveness but high in cooperativeness. |
+| **Key Characteristics** | - Smooths over conflict to maintain harmony.<br/>- Makes unilateral concessions.<br/>- Often used to build social capital for future use. |
+| **Best Used When**      | - You are wrong or have a weak position.<br/>- The issue matters much more to the other party than to you.<br/>- Preserving the relationship is critical (e.g., resolving a customer service dispute). |
+| **Risk**                | You may be perceived as weak or a pushover; resentment can build if not reciprocated. |
+
+#### Avoiding (lose-lose) approach
+
+| **Aspect**              | **Description** |
+| ----------------------- | --------------- |
+| **Attitude**            | "I'd rather not deal with this conflict right now." This is low in both assertiveness and cooperativeness. |
+| **Key Characteristics** | - Postpones discussions or withdraws from the situation.<br/>- Uses diplomatic diversion to change the topic.<br/>- Often results in the status quo remaining in effect. |
+| **Best Used When**      | - The issue is trivial or symptoms of a larger problem.<br/>- Emotions are running high and a cooling-off period is needed.<br/>- The costs of confrontation outweigh the benefits of resolving the conflict. |
+| **Risk**                | Important issues fester and grow worse; signals a lack of leadership. |
+
+### Time boundary
+
+The negotiation is a **strictly timed** conversation.
+A strict time limit is set by the user and enforced by Compensation Dojo.
+During the negotiation, Compensation Dojo will control the time, showing you the time elapsed and time remaining, and close the negotiation sharply at the time limit, unless a deal is reached earlier.
+
+### Negotiation context
+
+The negotiation can revolve around a made-up, fake role, or a real scenario you are preparing for.
+You can choose between participating in a scenario invented by Compensation Dojo on the fly, or specify your own scenario.
+Actual job description, company details (e.g., a link to the corporate site), and any additional constraints may be specified here.
+
+### Coaching
+
+Once the negotiation starts, Compensation Dojo will abstain from providing any immediate feedback or coaching/mentoring advice.
+Compensation Dojo is strictly in their role of the negotiation counterpart.
+
+If you need any additional advice or insight regarding the upcoming conversation, ask **before** it starts.
+
+## Phase 2: Negotiation
+
+Once the setup is finalized, the negotiation will be kicked off.
+Compensation Dojo will anounce the time start, e.g.,
+
 > “Negotiation started — timer is live.”
 
 The system is fully in-character from this point forward.
 
----
+### Timed negotiation flow
 
-## 6. Timed Negotiation
+In this phase, you are in your role. Focus on maximizng the chance of reaching your goals.
 
-- All dialogue is treated as real negotiation
-- Meta-questions are ignored or deflected in-character
-- Elapsed and remaining time are shown every turn
-- Unrealistic behavior is logged silently for feedback
+- All dialogue is treated as real negotiation.
+- Meta-questions are ignored or deflected.
+- Elapsed and remaining time are shown at every turn.
+- Unrealistic behavior is logged silently for feedback after the negotiation ends.
 
----
+### Termination
 
-## 7. Termination
+The negotiation ends sharply at the time limit, or earlier, if the two parts arrive at an agreement.
+No further in-role extensions, clarifications, or discusison are allowed at this point.
 
-When time expires:
-- Negotiation ends immediately
-- No extensions or clarifications are allowed
+## Phase 3: Post-negotiation update
 
----
+In this phase, you and Compensation Dojo exit your negotiator roles and return to the student-coach relationship.
 
-## 8. Expectation Reveal
+### Outcome summary
 
-If the user played the candidate, they disclose their original compensation target.
+- Concise, factual recap of the negotiation result.
+- Final compensation terms (or no agreement).
+- Key concessions and leverage shifts.
+- Clear statement of who the outcome favors (candidate, employer, or neutral).
 
----
+### Expectation reveal
 
-## 9. Closure & Feedback
+At this point, you can reveal your expectations wrt. the outcome of the negotiation.
+If you had any specific target compensation in mind, state it now.
 
-The system exits role and provides:
-- Outcome summary
-- Expectation calibration
-- Direct, actionable feedback on negotiation skill
+> **Note**  
+> Do **not** reveal your expectation before the negotiation. Keep your cards close!
 
-Feedback is professional, candid, and improvement-oriented.
+Compensation Dojo will provide an evaluation of whether the outcome beat, met, or missed the expectation.
+It will also share a commentary on realism of expectations given the selected negotiator attitude.
 
----
+### Skill evaluation and actionable feedback
 
-## 10. User Options Summary
+Compensation Dojo will provide:
 
-Configurable before negotiation:
-- Role
-- Learning goals
-- Opponent style
-- Time limit
-- Scenario details
+- Direct, candid assessment of your negotiation behavior, explicitly tied to the selected negotiator attitude.
+- Identify your strengths, mistakes, and missed opportunities.
+- Concrete guidance on what to do differently next time.
+- Style-specific advice on timing, concessions, and positioning.
 
-No changes are allowed once negotiation begins.
 
----
+Compensation Dojo will not provide any generic or motivational filler.
+That's not the purpose.
 
-## 11. Constraints & Guardrails
+## License and About
 
-- No coaching during negotiation
-- No breaking character
-- No endless back-and-forth
-- Strict time enforcement
+Licensed under the MIT License — see the [MIT License](https://opensource.org/licenses/MIT) for details.
 
-Training value is prioritized over comfort.
+```
+/about
 
----
-
-## 12. Intended Use
-
-Best suited for:
-- Practicing compensation discussions
-- Stress-testing negotiation strategies
-- Building confidence under pressure
+Pitch Architect: Conversational startup pitch, deck, and business document generator
+├─ version:    1.0.0
+├─ developer:  mailto:waclaw.kusnierczyk@gmail.com
+└─ licence:    MIT  https://opensource.org/licenses/MIT
+```
