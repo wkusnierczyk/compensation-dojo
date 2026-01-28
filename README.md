@@ -24,7 +24,7 @@ Check out [Compensation Dojo here](https://chatgpt.com/g/g-697a084b55b8819188f30
   - [Role selection](#role-selection)
   - [Learning goals](#learning-goals)
   - [Opponent style](#opponent-style)
-    - [The competitive (win-lose) approach](#the-competitive-win-lose-approach)
+    - [Competitive (win-lose) approach](#competitive-win-lose-approach)
     - [Collaborative (win-win) approach](#collaborative-win-win-approach)
     - [Compromising (split the difference) approach](#compromising-split-the-difference-approach)
     - [Accommodating (lose-win) approach](#accommodating-lose-win-approach)
@@ -110,7 +110,7 @@ You specify the style/attitude of your **negotiation counterpart**.
 | Accommodating | Lose-Win         | Relationship      |
 | Avoiding      | Lose-Lose        | Safety/status quo |
 
-#### The competitive (win-lose) approach
+#### Competitive (win-lose) approach
 
 | **Aspect**              | **Description** |
 | ----------------------- | --------------- |
