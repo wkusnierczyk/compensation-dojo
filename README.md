@@ -239,8 +239,8 @@ Licensed under the MIT License — see the [MIT License](https://opensource.org/
 ```
 /about
 
-Pitch Architect: Conversational startup pitch, deck, and business document generator
-├─ version:    1.0.0
+Compensation Dojo: A realistic compensation negotiation simulator
+├─ version:    0.1.0
 ├─ developer:  mailto:waclaw.kusnierczyk@gmail.com
 └─ licence:    MIT  https://opensource.org/licenses/MIT
 ```
